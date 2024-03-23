@@ -42,6 +42,21 @@
             font-size: 13px;
         }
     }
+
+    .title {
+        &_left {
+            font-size: 30px;
+            margin-left: 15px;
+        }
+    }
+
+    .consultation__descr {
+        margin-left: 15px;
+    }
+
+    .feed-form {
+        margin-left: 15px;
+    }
 }
 
 @media(max-width: 575px) {
