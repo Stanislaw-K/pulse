@@ -1,0 +1,49 @@
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 991px) {
+    .promo {
+        padding: 21px;
+        &__header {
+            font-size: 35px;
+        }
+    }
+    .advantages {
+        padding: 73px 20px 60px 20px;
+        &__item {
+            padding: 0 10px 0 10px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__phone {
+            font-size: 16px;
+        }
+        &__official {
+            padding-right: 15px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 28px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    }
+    .advantages {
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+
+}
