@@ -26,7 +26,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+000000000000" class="header__phone">+0 (000) 000-00-00</a>
-                    <button class="button">call</button>
+                    <button data-modal="consultation" class="button">call</button>
                 </div>
             </header>
 
@@ -52,7 +52,7 @@
                     </div>
                 </div>
 
-                <button class="button button_main">order a consultation</button>
+                <button data-modal="consultation" class="button button_main">order a consultation</button>
                 <div class="promo__link">
                     and
                     <a href="#">GO TO THE CATALOG</a>
@@ -107,14 +107,13 @@
             <div class="consultation__descr">
                 Just fill out the application form<br> and we will call you back within 10 minutes
             </div>
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Your name" type="text">
                 <input name="phone" required placeholder="Your phone" type="number">
                 <input name="email" required placeholder="Your email" type="email">
 
                 <button class="button button_submit">get a consultation</button>
                 <!-- <input type="reset"> -->
-
             </form>
         </div>
     </section>
@@ -508,7 +507,6 @@
     </section>
 
     <footer class="footer">
-        <!-- <div class="footer__map"></div> -->
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4659.49047453852!2d30.51024610484368!3d50.45469056607847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce88e35e395f%3A0xc63774cf5da5a434!2z0KHQvtCx0L7RgCDQodC-0YTRltGPINCa0LjRl9Cy0YHRjNC60LA!5e0!3m2!1sru!2spl!4v1712147977837!5m2!1sru!2spl"
             width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
@@ -525,10 +523,46 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Just fill out the application form</div>
+            <div class="modal__descr">and we will call you back within 10 minutes</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Your name" type="text">
+                <input name="phone" placeholder="Your phone" type="number">
+                <input name="email" placeholder="Your email" type="email">
+
+                <button class="button button_submit">get a consultation</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Your order:</div>
+            <div class="modal__descr">Polar FT1 Heart Rate Monitor</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Your name" type="text">
+                <input name="phone" required placeholder="Your phone" type="number">
+                <input name="email" required placeholder="Your email" type="email">
+
+                <button class="button button_submit">BUY</button>
+                <!-- <input type="reset"> -->
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Thank you for your application!</div>
+            <div class="modal__descr">Our manager will contact you soon!</div>
+        </div>
+    </div>
+
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
