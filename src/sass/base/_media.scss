@@ -1,22 +1,110 @@
 @media (max-width: 1200px) {
 
 }
-
+/*--------------- 766px - 991px --------------- */
 @media (max-width: 991px) {
     .promo {
-        padding: 21px;
         &__header {
-            font-size: 35px;
+            font-size: 32px;
+        }
+        &__subheader {
+            font-size: 20px;
         }
     }
+    .consultation {
+        .title {
+            font-size: 30px;
+        }
+        &__descr{
+            font-size: 18px;
+        }
+    }
+
     .advantages {
         padding: 73px 20px 60px 20px;
         &__item {
             padding: 0 10px 0 10px;
         }
     }
-}
+    .catalog {
+        .container{
+            width: 768px;
+            margin: 0 auto;
+        }
+        &__content {
+            margin: 60px 60px 0 60px;
+            display: none;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        &_active {
+            display: flex;
+            }
+        }
+        &__tab{
+            width: 180px;
+        }
+    }
 
+    .feed {
+        .title {
+            font-size: 25px;
+        }
+        img {
+            width: 140px;
+            height: 140px;
+        }
+        &__item {
+            margin: 0 25px 0 25px;
+            .feed__text {
+                margin-left: 40px;
+                .feed__subtitle {
+                    font-size: 15px;
+                }
+                .feed__count {
+                    font-size: 12px;
+                }
+                .feed__descr {
+                    font-size: 13px;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer__info {
+            width: 330px;
+            height: 240px;
+        }
+        .footer__addr {
+            margin-bottom: 20px;
+            font-size: 17px;
+            line-height: 16px;
+        }
+        .footer__phone {
+            font-size: 17px;
+            line-height: 15px;
+            margin-bottom: 25px;
+        }
+        .footer__social {
+            .footer__social-item {
+                width: 35px;
+                height: 35px;
+                img {
+                    height: 18px;
+                }
+            }
+        }
+    }
+
+    .pageup {
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+/*--------------- 576px - 767px --------------- */
 @media (max-width: 767px) {
     .header {
         &__phone {
